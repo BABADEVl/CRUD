@@ -56,7 +56,8 @@ public:
     Classe(std::string nomClasse) : nomClasse(nomClasse) {}
 
     // Faire l'appel
-    void faireAppel() const {
+    void faireAppel() const 
+    {
         std::cout << "Liste des eleves de la classe " << nomClasse << " : " << std::endl;
         for (const Etudiant& etudiant : etudiants) 
         {
@@ -146,9 +147,9 @@ int main()
 
     Classe classe("Bachelor 2 IT");
 
-    Etudiant e1("Branet", "Mathis", 20);
+    Etudiant e1("Branet", "Mathis", 14);
     Etudiant e2("Demachintruc", "Simon", 21);
-    Etudiant e3("Brule", "Basil", 19);
+    Etudiant e3("Brule", "Basil", 21);
 
     classe.ajouterEleve(e1);
     classe.ajouterEleve(e2);
